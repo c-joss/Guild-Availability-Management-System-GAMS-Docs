@@ -86,7 +86,7 @@ The **Model** layer (Mongoose schemas and domain logic) represents entities such
 _Fig 3. High Level Structure Model–View–Controller Diagram, Image created by the team using draw.io._
 
 - **View (React Frontend)**: Displays data to the user and sends requests to the backend. Example: Item list page, Contract details page.
-- **Controller (Express.js)**: Receives HTTP requests, calls the appropriate model methods, and returns responses. Example: `itemController.js`, `questController.js`.
+- **Controller (Express.js)**: Receives HTTP requests, calls the appropriate model methods, and returns responses. Example: `itemController.js`, `contractController.js`.
 - **Model (MongoDB + Mongoose)**: Defines the structure of data and encapsulates business logic. Example: `Item`, `User`, `Contract` models.
 
 #### 3.2.2 Example of How MVC Will Be Applied in This Project
@@ -108,13 +108,13 @@ _Fig 3. MVC Applied in GAMS project Diagram, Image created by the team using dra
 
 ## 6. ERD explanation
 
-The Entity Relationship Diagram (ERD) models the core data structures and interactions within the Guild Contract & Item Watch System, capturing how users engage with items, quests, reservations, and notifications. It separates the two availability, behaviours—inventory‑based items and time‑window‑based quests—into distinct entities, each with their own attributes and relational rules. Supporting entities such as Reservation, ContractAcceptance, Watchlist, and Notification represent user actions and system‑generated events, ensuring that every interaction is stored in a structured and traceable way.
+The Entity Relationship Diagram (ERD) models the core data structures and interactions within the Guild Contract & Item Watch System, capturing how users engage with items, contracts, reservations, and notifications. It separates the two availability, behaviours—inventory‑based items and time‑window‑based contracts—into distinct entities, each with their own attributes and relational rules. Supporting entities such as Reservation, ContractAcceptance, Watchlist, and Notification represent user actions and system‑generated events, ensuring that every interaction is stored in a structured and traceable way.
 
 <center><img src=".\ERD\guild-erd.png" alt="ERD Guild Contract & Artifact Watch System - Planing and Design Version">  </center>
 
 _Fig 3. Entity Relationship Diagram (ERD) for the Guild Contract & Artifact Watch System, created by the student team using draw.io._
 
- The ERD follows a fully normalised design, reducing redundancy and  clarifying the relationships between users, items, and quests, while also supporting polymorphic associations for watch and notification functionality. This schema provides a stable foundation for the application’s API, business logic, and future scalability.
+ The ERD follows a fully normalised design, reducing redundancy and  clarifying the relationships between users, items, and contracts, while also supporting polymorphic associations for watch and notification functionality. This schema provides a stable foundation for the application’s API, business logic, and future scalability.
 
 ## 7. User stories
 
